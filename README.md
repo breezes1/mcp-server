@@ -4,6 +4,9 @@
 bundle i
 rails s -p 3002
 
+mcp输出地址: http://127.0.0.1:3002/mcp
+
+
 #### 启动调试 modelcontextprotocol/inspector
 使用固定config，关闭鉴权，http传输
 默认端口6277
