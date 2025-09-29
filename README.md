@@ -1,24 +1,10 @@
-# README
+### 测试mcp功能
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### 启动rails服务, 以对外输出http mcp服务
+bundle i
+rails s -p 3009
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### 启动调试 modelcontextprotocol/inspector
+使用固定config，关闭鉴权，http传输
+默认端口6277
+npx @modelcontextprotocol/inspector --config ./modelcontextprotocol/config.json -e DANGEROUSLY_OMIT_AUTH=true --transport http
